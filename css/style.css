@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+header{
+    height:100vh;
+    background-color:#ccc;
+    display:flex;
+    flex-direction:column;
+}
+.slide{
+    flex:1;
+    background-color:gold;
+    overflow:hidden;
+}
+.slider-width{
+    display:flex;
+    height:100%;
+    transition:all ease 0.5s
+}
+.slider--item{
+    width:100vw;
+    height:inherit;
+    background-size:cover;
+    background-position:top;
+}
+
+.slider-buttons{
+    position:absolute;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:20px;
+}
+.slider--button{
+    background-color:blue;
+    width:auto;
+    height:40px;
+    padding:5px;
+    line-height:40px;
+    cursor:pointer;
+    border-radius:50%;
+    font-size:13px;
+}
+h1{
+    text-align:center;
+}
+.novo-slide{
+    width:600px;
+    height:350px;
+    background-color:red;
+    overflow:hidden;
+    margin:auto;
+    margin-bottom:20px;
+}
+.slider-area{
+    display:flex;
+    background-color:blue;
+    height:100%;
+    transition:all ease 0.5s;
+}
+
+.sliderDaVez{
+    width:100%;
+    height:inherit;
+    background-size:cover;
+    background-position:top;
+}
+
+
+.bolinhas{
+    display:flex;
+    position:absolute;
+    justify-content:center;
+    align-items:flex-end;
+    width:inherit;
+    height:inherit;
+    padding-bottom:10px;
+}
+.bola{
+    background-color:white;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    margin-left:3px;
+    margin-right:3px;
+}
+.bola:hover{
+    background-color:red;
+    cursor:pointer;
+}
